@@ -11,9 +11,4 @@ terraform {
     }
   }
 
-  backend "gcs" {
-    bucket = "terraform-reg-modules-tfstate"
-    prefix = "state/notebook-instance"
-  }
-
 }
