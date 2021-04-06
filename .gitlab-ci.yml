@@ -61,16 +61,7 @@ terratest:
 release:
   image: node:13
   stage: release
-  script:release:
-  image: node:13
-  stage: release
   script:
-    - npm install @semantic-release/gitlab @semantic-release/exec
-    - npx semantic-release
-  only:
-    refs:
-    - master
-
     - npm install @semantic-release/gitlab @semantic-release/exec
     - npx semantic-release
   only:
